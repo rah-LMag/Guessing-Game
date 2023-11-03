@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adivinhe o número! </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+</head>
+<body>
+    <div class="container">
+    <div id="content">
+        <h1>Adivinhe o Número de 1 a 30</h1>
+    </div>
+    <div class="adivinha">
+        <h2>Digite sua Tentativa</h2>
+        <input type="number" id="num"  placeholder="Digite um número"/> <br><br>
+        <input class="btn" onclick="verificarnumber()" type="submit" value="Enviar" id="send">
+        <button class="btn" onclick="resetarJogo()" id="res">Resetar</button>
+      
+        <p id="tentativasDisplay">Tentativas Restantes: 10</p>
+        <p id="resultado"></p>
+
+    </div>
+    <footer>
+        <a href="https://github.com/rahrahszs2"> <i class="fab fa-github"></i></a> 
+    </footer>
+    </div>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
